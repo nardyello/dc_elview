@@ -1,0 +1,223 @@
+body{
+    background-color: #F6F6F6;
+    color: #465a63;
+    font-family: "Roboto";
+}
+
+header{
+    //height: 60px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #ebebeb;
+}
+
+h4{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Roboto Condensed";
+}
+
+.weight-light{
+    font-weight: 300;
+}
+
+.weight-mid{
+    font-weight: 600;
+}
+
+.weight-bold{
+    font-weight: 900;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+/******************************
+    MARGINS AND PADDINGS
+******************************/
+
+/*****MARGINS*****/
+
+.margin-bottom-xs {margin-bottom: 5px;}
+.margin-bottom-sm {margin-bottom: 10px;}
+.margin-bottom-md {margin-bottom: 15px;}
+.margin-bottom-lg {margin-bottom: 20px;}
+
+@media (min-width: 768px) {
+.margin-bottom-xs {margin-bottom: 10px;}
+.margin-bottom-sm {margin-bottom: 20px;}
+.margin-bottom-md {margin-bottom: 40px;}
+.margin-bottom-lg {margin-bottom: 50px;}
+}
+
+/*****PADDINGS*****/
+
+.padding-xs {padding: 3px;}
+.padding-sm {padding: 6px;}
+.padding-md {padding: 10px;}
+.padding-lg {padding: 15px;}
+
+@media (min-width: 768px) {
+.padding-xs {padding: 5px;}
+.padding-sm {padding: 10px;}
+.padding-md {padding: 15px;}
+.padding-lg {padding: 20px;}
+}
+
+/******************************
+            COLORS
+******************************/
+
+/*****TEXT COLORS*****/
+.el-text-light{
+    color: #b3aeae;
+}
+
+.el-red{
+    color: #fd6c71;
+}
+
+.el-blue{
+    color: #54adf4;
+}
+
+.el-green{
+    color: #24e0b5;
+}
+
+.el-yellow{
+    color: #fcb756;
+}
+
+.el-white{
+    color: #FFFFFF;
+}
+
+.el-red:hover, .el-red-hover:hover{
+    color: #fb5e63;
+}
+
+.el-blue:hover, .el-blue-hover:hover{
+    color: #42a4f2;
+}
+
+.el-green:hover, .el-green-hover:hover{
+    color: #11d9ab;
+}
+
+.el-yellow:hover, .el-yellow-hover:hover{
+    color: #fbae43;
+}
+
+.el-white:hover, .el-white-hover:hover{
+    color: #FFFFFF;
+}
+
+/*****BG COLORS*****/
+.bg-white{
+    background-color: #FFFFFF;
+}
+
+.bg-dark-1{
+    background-color: #52596b;
+}
+
+.bg-dark-2{
+    background-color: #4a5060;
+}
+
+/*****BUTTON COLORS*****/
+.el-btn-md{
+    padding-top: 8px;
+    width: 135px;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+.el-btn-red{
+    background-color: #fd6c71;
+    color: #FFFFFF;
+}
+
+.el-btn-red:hover{
+    background-color: #fb5e63;
+    color: #FFFFFF;
+}
+
+.el-btn-blue{
+    background-color: #54adf4;
+    color: #FFFFFF;
+}
+
+.el-btn-blue:hover{
+    background-color: #42a4f2;
+    color: #FFFFFF;
+}
+
+.el-btn-green{
+    background-color: #24e0b5;
+    color: #FFFFFF;
+}
+
+.el-btn-green:hover{
+    background-color: #11d9ab;
+    color: #FFFFFF;
+}
+
+.el-btn-yellow{
+    background-color: #fcb756;
+    color: #FFFFFF;
+}
+
+.el-btn-yellow:hover{
+    background-color: #fbae43;
+    color: #FFFFFF;
+}
+
+
+/******************************
+    Structure Dimentions
+******************************/
+/*****QUESTIONNAIRE*****/
+.activity-title{
+    border-right: 1px solid #efefef;
+    border-left: 1px solid #efefef;
+    border-top: 1px solid #efefef;
+}
+
+.questionnaire{
+    border-right: 1px solid #efefef;
+    border-left: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+
+.questionnaire .row{
+    //margin-bottom: 20px;
+}
+
+/******************************
+            BUTTONS
+******************************/
+.el-btn{
+    margin: 3px 5px;
+}
+
+/******************************
+            HEADER
+******************************/
+.headerbg{
+    background-image: url('../images/bg1.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+/******************************
+    QUESTION AND ANSWER
+******************************/
+h3.question{
+
+}
+
+p.answer{
+    font-size: 18px;
+}
