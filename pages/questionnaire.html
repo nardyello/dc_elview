@@ -2,46 +2,46 @@
 
 <section class="container-fluid">
     <div class="container" ng-controller="QuestionnaireController">
-
         <div class="row">
             <div class="col-md-8 col-sm-12 col-md-offset-2 bg-white questionnaire" style="min-height: 70px; padding: 15px 30px;">
                 <div class="row options padding-md" style="text-align: right;">
                 </div>
 
                 <div class="row questions col-sm-offset-1 col-sm-10 margin-bottom-md">
-                <h3 class="question">Which is the highest mountain in the world?</h3>
+                <h3 class="question">{{currentQuestion}}</h3>
                 <p class="answer">
-                  <input type="text" class="form-control" placeholder="Your Answer" aria-describedby="sizing-addon1">
+                  <input type="text" class="form-control" placeholder="Your Answer" aria-describedby="sizing-addon1"
+                      autocomplete="off" autofocus="true">
                 </p>
                 </div>
 
                 <div class="clearfix"></div>
 
                 <div class="row buttons margin-bottom-md" style="text-align: center;">
-                  <button class="btn btn-default btn-blue btn-md" title="Continuar">
+                  <button class="btn btn-primary btn-blue btn-md" title="Continuar" ng-click="nextQuestion()">
                     <span class="glyphicon glyphicon-check"></span> Continue
                   </button>
 
-                  <button class="btn btn btn-default btn-blue btn-md" title="Verifique suas respostas">
+                  <button class="btn btn btn-primary btn-md" title="Verifique suas respostas">
                       <span class="glyphicon glyphicon-list-alt"></span> Answers
                   </button>
 
-                  <button type="button" class="btn btn-default btn-md">
+                  <button type="button" class="btn btn-primary btn-md">
                     <span class="glyphicon glyphicon-repeat"></span> Repeat
                   </button>
 
-                  <button type="button" class="btn btn-default btn-md">
+                  <button type="button" class="btn btn-primary btn-md">
                     <span class="glyphicon glyphicon-refresh"></span> Restart
                   </button>
 
-                  <button type="button" class="btn btn-default btn-md">
+                  <button type="button" class="btn btn-primary btn-md">
                     <span class="glyphicon glyphicon glyphicon-question-sign"></span> Help me
                   </button>
 
                 </div>
 
                 <div class="warning">
-            <p class="text-center el-text-light">Há um erro com esta frase? <a href="#">Sim</a></p>
+            <p class="text-center el-text-light">Há um erro com esta frase? <a href="#" ng-click="reportFeedback()">Sim</a></p>
             </div>
             </div>
 
@@ -49,5 +49,7 @@
     </div>
 </section>
 <!-- End of Content -->
+
+<ng-include src="'pages/feedback.html'"  ng-show={{mostrarSuporte}}></ng-include>
 
 </div>
